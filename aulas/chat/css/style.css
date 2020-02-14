@@ -1,0 +1,178 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body
+{
+	background: #ccc;
+}
+ul{list-style-type: none;}
+#users_online{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 240px;
+	height: 100%;
+	background: linear-gradient(to right, #ccc, #fff 30%);
+	border-left: 1px solid #999;
+}
+#users_online ul li{
+	float: left;
+	width: 100%;
+	border: 1px solid transparent;
+	padding: 5px;
+	margin-left: -1px;
+	position: relative;
+}
+#users_online ul li:hover{
+	border-color: #999;
+	background: linear-gradient(to right, #ccc, #fff 60%);
+}
+#users_online ul li a{
+	text-decoration: none;
+	float: left;
+	width: 70%;
+	margin-left: 10px;
+	font: 16px Tahoma, arial, helvetica;
+	line-height: 40px;
+	color: #555;
+}
+.imgSmall{
+	float: left;
+	width: 40px;
+	height: 40px;
+	overflow: hidden;
+	border-radius: 50%;
+}
+.imgSmall img{ width: 100%; height: 100%}
+.status
+{
+	position: absolute;
+	right: 8px;
+	top: 50%;
+	margin-top: -6px;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: #111;
+}
+.status.off{background: #ccc;}
+.status.on{background: #090;}
+
+
+/* Aside Chats */
+#chats
+{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 82%;
+}
+.window{
+	float: left;
+	width: 270px;
+	height: auto;
+	margin-left: 5px;
+	overflow: hidden;
+	border-radius: 4px;
+}
+.window .header_window{
+	float: left;
+	background-color: #00ACE5;
+	padding: 5px;
+	width: 270px;
+	position: relative;
+	cursor: pointer;
+}
+.window .header_window .close{
+	text-decoration: none;
+	float: left;
+	color: white;
+	font: 16px Tahoma, arial, helvetica;
+	padding: 0 10px 0 0;
+}
+.window .header_window .name
+{
+	float: left;
+	font: 16px Tahoma, arial;
+	color: white;
+}
+.window .body_window
+{
+	float: left;
+	width: 100%;
+}
+.window .body_window .messages
+{
+	float: left;
+	width: 100%;
+	background: #ebebeb;
+	border-left: 1px solid #999;
+	border-right: 1px solid #999;
+	height: 230px;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+.messages ul
+{
+	float: left;
+	width: 100%;
+}
+.messages ul li
+{
+	float: right;
+	width: 80%;
+	background: linear-gradient(to bottom, #ccc, #fff 130%);
+	border: 1px solid #999;
+	border-radius: 4px;
+	position: relative;
+	padding: 4px;
+	margin-bottom: 9px;
+}
+.messages ul li .imgSmall
+{
+	position: absolute;
+	width: 35px;
+	height: 35px;
+	left:-45px;
+	margin-top: -8px;
+	margin-bottom: 10px;
+}
+.messages ul li p{
+	font: 13px tahoma, arial;
+	color: #555;
+}
+.messages ul li.eu
+{
+	float: left;
+	background: #a4e9ff;
+}
+.messages::scrollbar{
+	width: 3px;
+}
+.messages::scrollbar-track{
+	background-color: #555;
+	border-left: 1px solid #ebebeb;
+	border-right: 1px solid #ebebeb;
+}
+.messages::scrollbar-thumb{
+	background: #555;
+}
+.messages::scrollbar-thumb:hover{
+	background: #069;
+} 
+.window .body_window .send_message{
+	float: left;
+	width: 100%;
+	position: relative;
+}
+.window .body_window .send_message input
+{
+	float: left;
+	width: 100%;
+	padding: 3px;
+	background: white;
+	border: 1px solid #999;
+	outline: none;
+}

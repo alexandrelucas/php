@@ -1,0 +1,129 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #0a4096;
+    color: whitesmoke;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.navbar{
+    top: 0;
+    right: 0;
+    background: linear-gradient(to left, #ed8c04, blue 150%);
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    z-index: 10;
+    box-shadow: 0px 5px 20px 2px rgba(0,0,0,0.4);
+}
+.navbar .settings{
+    position: absolute;
+    float: right;
+    top: 65px;
+    right: 10px;
+    background: linear-gradient(to right, #f47a42, #ed8c04  50%);
+    width: 300px;
+    height: 350px;
+    box-shadow: 0px 5px 5px 2px rgba(0,0,0,0.2);
+    border-radius: 8px;
+  
+}
+.settings ul {
+    list-style-type: none;
+}
+.settings ul li{
+    display: inline-block;
+    padding-left: 12px;
+    padding-top: 5px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    border: 1px solid #444;
+    background: #333;
+    border-radius: 4px;
+    width: 100%;
+    height: 35px;
+}
+.settings ul li a {
+    color: white;
+    text-decoration: none;
+}
+.settings ul li img {
+    margin-right: 10px;
+    vertical-align: text-top;
+}
+
+
+.navbar .settings.hidden{
+    /*display: none;*/
+    transition: display ease-out 1000ms;
+}
+.username{
+    float: left;
+    font-weight: bold;
+}
+.imgSmall{
+    margin-top: 10px;
+    margin-right: 15px;
+	float: right;
+	width: 40px;
+	height: 40px;
+	overflow: hidden;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.imgSmall img{ width: 100%; height: 100%}
+
+main.main{
+    display: inline;
+    background-color: white;
+    width: 100%;
+    min-height: 650px;
+}
+section.leftside
+{
+    float: left;
+    background: #333;
+    width: 80%;
+    min-height: 100%;
+}
+aside.rightside
+{
+    float: right;
+    position: relative;
+    background: blueviolet;
+    width: 20%;
+    height: 100%;
+}
+.roomlist
+{
+    margin-top: 95px;
+    margin-left: 20px;
+    width: 100%;
+    min-height: 650px;
+    overflow-y: auto;
+}
+.roomlist ul
+{
+    list-style: none;
+    width: 100%;
+    display: flex;
+    table-layout: wrap;
+}
+.roomlist ul li
+{
+    flex: 0 0 50%;
+    display: flex;
+    align-items: flex-end;
+}
+.room
+{
+    margin-bottom: 20px;
+    margin-left: 20px;
+    width: 315px;
+    height: 200px;
+    background:linear-gradient(to bottom, #8c26bf, #04e1ed 150%);
+    border-radius: 8px;
+    box-shadow: 2px 2px 20px 2px rgba(0,0,0,0.5);
+}
